@@ -1,5 +1,16 @@
 # Building ComicViewer(MVP)
 
+## Defining the Mininum Viable Project
+
+#### Bare Mininum
+- [ ] Way to upload chapters
+- [ ] Navigation around chapters
+- [ ] Way to see pages
+- [ ] Page alignment
+
+#### Pretty Important!
+- [ ] 
+
 
 ## Considerations when serving webcomic pages as a *Static Asset* vs *Fetching from a Database*
 
