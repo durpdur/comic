@@ -4,35 +4,16 @@
  */
 import Link from "next/link"
 
-export function Component() {
+export function LandingPage() {
   return (
-    <div key="1" className="flex flex-col min-h-screen">
-      <header className="flex items-center justify-between p-4 bg-gray-800 text-white">
-        <h1 className="text-2xl font-bold">Web Comic Title</h1>
-        <nav className="flex gap-4">
-          <Link className="text-white hover:underline" href="#">
-            Home
-          </Link>
-          <Link className="text-white hover:underline" href="#">
-            About
-          </Link>
-          <Link className="text-white hover:underline" href="#">
-            Contact
-          </Link>
-        </nav>
-      </header>
+    <div className="flex flex-col min-h-screen">
       <main className="flex-1">
         <section className="w-full h-screen py-12 md:py-24 lg:py-32">
-          <div className="container px-4 md:px-6">
-            <div className="flex flex-col items-center space-y-4 text-center">
-              <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">Latest Comic Strip</h2>
+          <div className="flex flex-col items-center space-y-4">
+              <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl items-center">Title</h2>
               <p className="max-w-[600px] text-gray-500 md:text-xl dark:text-gray-400">
-                The latest comic strip from the web comic.
+                Short description about comic(?)
               </p>
-              <div className="w-full max-w-sm space-y-2">
-                <form className="flex space-x-2" />
-              </div>
-            </div>
           </div>
         </section>
         <section className="w-full py-12 md:py-24 lg:py-32 bg-gray-100">
@@ -42,7 +23,7 @@ export function Component() {
                 alt="Comic Strip"
                 className="mx-auto aspect-video overflow-hidden rounded-xl object-cover object-center sm:w-full lg:order-last"
                 height="310"
-                src="/placeholder.svg"
+                src="/vercel.svg"
                 width="550"
               />
               <div className="flex flex-col justify-center space-y-4">
@@ -62,7 +43,7 @@ export function Component() {
                 alt="Comic Strip"
                 className="mx-auto aspect-video overflow-hidden rounded-xl object-cover object-center sm:w-full lg:order-last"
                 height="310"
-                src="/placeholder.svg"
+                src="/next.svg"
                 width="550"
               />
               <div className="flex flex-col justify-center space-y-4">
@@ -76,17 +57,6 @@ export function Component() {
           </div>
         </section>
       </main>
-      <footer className="flex flex-col gap-2 sm:flex-row py-6 w-full shrink-0 items-center px-4 md:px-6 border-t">
-        <p className="text-xs text-gray-500 dark:text-gray-400">© 2024 Web Comic Title. All rights reserved.</p>
-        <nav className="sm:ml-auto flex gap-4 sm:gap-6">
-          <Link className="text-xs hover:underline underline-offset-4" href="#">
-            Terms of Service
-          </Link>
-          <Link className="text-xs hover:underline underline-offset-4" href="#">
-            Privacy
-          </Link>
-        </nav>
-      </footer>
     </div>
   )
 }
